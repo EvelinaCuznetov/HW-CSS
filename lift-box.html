@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Box Lift (margins)</title>
+    <style>
+        .building {
+            width: 200px;
+            height: 500px;
+            background-color: #999;
+        }
+
+        .shaft {
+            width: 50px;
+            height: 500px;
+            background: #333;
+            margin: auto;
+        }
+
+        .start {
+            width: 40px;
+            height: 5px;
+            background-color: red;
+            margin-left: 5px;
+        }
+        
+
+        
+
+        /* 1. Daca vom sterge blocul "start", liftul urca sus, iar toata cladirea coboara in josul paginii. 
+           2. Blocul "start" are rolul de a  ???
+           3. Daca blocului "start" i-am da margin in partea de jos egala cu aceiasi valoare ca si margin setat liftului, nu are loc nici o modificare. In schimb, daca valoarea va fi mai mare, atunci blocul "lift" ar cadea in jos.
+           */
+        
+        .lift {
+            width: 40px;
+            height: 80px;
+            background: #111;
+            color: white;
+            margin-top: 415px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="building">
+        <div class="shaft">
+            <div class="start"></div>
+            <div class="lift">
+                BOB
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
