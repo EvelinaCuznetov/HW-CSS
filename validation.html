@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INPUT VALIDATION & CSS</title>
+    <style>
+        body {
+            background-color: #333;
+            font-family: Arial;
+            color: white;
+        }
+
+        label {
+            display: block;
+            width: 300px;
+            padding: 10px;
+            margin: 20px 0;
+            background-color: #666;
+        }
+
+        input {
+            padding: 5px;
+            outline: none;
+            border: 2px solid #222;
+            background-color: #e6dbdb;
+        }
+
+        input:focus {
+            border-color: blue;
+            background-color: #fff;
+
+        }
+        input:invalid {
+            border-color: red;
+        }
+        
+        small {
+            display: none;
+            font-size: 11px;
+            color: orangered;
+            text-align: right;
+        }
+
+        span {
+            font-size: 20px;
+            padding-right: 15px;
+        }
+
+        i {
+            font-weight: bold;
+            font-size: 12px;
+            color: darkred;
+        }
+
+        input:invalid + small {
+            display: block;
+            animation: shake 0.15s 3;
+        }
+    
+        button {
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            border: 2px solid white;
+            margin-left: 20px;
+            font-family: Georgia;
+        }
+
+        @keyframes shake {
+            from { padding-right: 0;}
+            to { padding-right: 50px;}
+        }
+    </style>
+</head>
+<body>
+    <form action="URL">
+        ... <br>
+        <label>
+            Your Full Name
+            <input type="text"
+             placeholder="e.g.: John Doe"
+             pattern="^[A-Z][a-z]+ [A-Z][a-z]+$"
+             >
+        <small>
+            <span>❗</span>
+            You must enter the name as two capitalized words <br>
+               like: <i>John Doe, Marry Poppins, Vlad Tepes, etc</i>
+        </small>
+        </label>
+        <br>
+        ... <br>
+        <button>SEND</button>
+    </form>
+    
+</body>
+</html>
