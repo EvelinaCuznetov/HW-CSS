@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Street BLOCK | CSS</title>
+    <style>
+        body {
+            background-color: #223;
+
+        }
+
+        .street {
+            border: 1px dotted red;
+        }
+
+        .house {
+            height: 150px;
+            width: 100px; 
+            display: inline-block;
+        } 
+        .building-tall {
+            display: inline-block;
+            height: 300px;
+            width: 100px;
+            background-color: rgb(197, 167, 67);
+            margin-left: 30px;
+        }
+
+        .building-tall .window1-l {
+            border: 3px solid rgb(63, 15, 15);
+            width: 25px;
+            height: 40px;
+            background-color: yellow;
+        }
+
+         .building-tall .window1-r {
+            border: 3px solid rgb(63, 15, 15);
+            width: 25px;
+            height: 40px;
+            transform: translateX(70px) translateY(-46px);
+             background-color: yellow;
+        }
+
+        .building-tall .window2-l {
+            border: 3px solid rgb(63, 15, 15);
+            width: 25px;
+            height: 40px;
+            background-color: yellow;
+        }
+
+         .building-tall .window2-r {
+            border: 3px solid rgb(63, 15, 15);
+            width: 25px;
+            height: 40px;
+            transform: translateX(70px) translateY(-46px);
+            background-color: black;
+        }
+
+        .building-tall .window3-l {
+            border: 3px solid rgb(63, 15, 15);
+            width: 25px;
+            height: 40px;
+            background-color: black;
+        }
+
+         .building-tall .window3-r {
+            border: 3px solid rgb(63, 15, 15);
+            width: 25px;
+            height: 40px;
+            transform: translateX(70px) translateY(-46px);
+            background-color: yellow;
+        }
+        .building-tall .door {
+            border: 7px solid rgb(44, 5, 5);
+            width: 15px;
+            height: 30px;
+            margin-left: 36px;
+            margin-top: -20px;
+            background-color: brown;
+        }
+
+        .cloud {
+            width: 50px;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 20px;
+            padding-top: 50px;
+        }
+
+        .tree {
+            display: inline-block;
+            width: 50px;
+            margin-left: -50px;
+
+
+        }
+
+        .building-small {
+            display: inline-block;
+            width: 250px;
+            height: 150px;
+            background-color: rgb(255, 181, 124);
+            margin-left: 50px;
+        }
+
+        .building-small .center-wall {
+            border-left: 40px solid white;
+            height: 150px;
+            margin-left: 105px;
+        }
+
+        .building-small .small-window1-l {
+            border: 2px solid white;
+            background-color: black;
+            width: 80px;
+            height: 40px;
+            transform: translateY(-140px);
+        }
+        .building-small .small-window1-r {
+            border: 2px solid white;
+            background-color: yellow;
+            width: 80px;
+            height: 40px;
+            transform: translateY(-185px) translateX(166px);
+        }
+        .building-small .small-door-l {
+            background-color: gray;
+            width: 70px;
+            height: 40px;
+            border: 2px solid darkslategrey;
+            transform: translateY(-132px) translateX(15px);
+        }
+        
+        .building-small .small-door-2 {
+            background-color: gray;
+            width: 70px;
+            height: 40px;
+            border: 2px solid darkslategrey;
+            transform: translateY(-176px) translateX(162px);
+            
+        }
+
+        .house-roof {
+            height: 0px;
+            width: 0px;
+        /*    background-color: red; */
+            border: 50px solid white;
+            border-top-width: 0px;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: brown;
+            border-bottom-width: 70px;
+        }
+
+        .horn {
+            border: 8px solid #4d0000;
+            border-right-width: 0px;
+            border-bottom-width: 16px;
+            transform: translateX(9px);
+
+        }
+
+        .house-wall {
+            background-color: antiquewhite;
+            height: 80px;
+        }
+
+        .house-window {
+            width: 30px;
+            height: 30px;
+            border: 2px solid brown;
+            transform: translateX(33px) translateY(23px);
+        }
+
+        .section-v {
+            border-right: 2px solid black;
+            width: 14px;
+            height: 30px;
+        }
+        .section-h {
+            border-top: 2px solid black;
+            width: 30px;
+            transform: translateY(-15px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="street">
+
+        <div class="house">
+            <div class="house-roof">
+                <div class="horn"></div>
+            </div>
+            <div class="house-wall">
+                <div class="house-window">
+                    <div class="section-v"></div>
+                     <div class="section-h"></div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="building-tall">
+            <div class="window1-l"></div>
+            <div class="window1-r"></div>
+            <div class="window2-l"></div>
+            <div class="window2-r"></div>
+            <div class="window3-l"></div>
+            <div class="window3-r"></div>
+            <div class="door"></div>
+            
+
+            
+        </div>
+
+        <div class="cloud">
+            <img src="https://icons.iconarchive.com/icons/flaticonmaker/flat-style/48/cloud-icon.png"/>
+        </div>
+
+        <div class="tree">
+            <img src="https://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/72/22330-deciduous-tree-icon.png">
+        </div>
+
+        <div class="building-small">
+            <div class="center-wall"></div>
+            <div class="small-window1-l"></div>
+            <div class="small-window1-r"></div>
+            <div class="small-door-l"></div>
+            <div class="small-door-2"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
