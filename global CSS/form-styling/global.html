@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FORM STYLING</title>
+    <style>
+        #subscribe-form {
+            background-color: #004466;
+            padding: 20px;
+        }
+         .form-heading {
+            color: white;
+            font-size: 25px;
+        }
+        .input-email {
+            font-size: 30px;
+            padding: 10px;
+            padding-left: 40px;
+            border: none;
+            width: 450px;
+            background-image: url(img/at.svg);
+            background-size: 30px 30px;
+            background-repeat: no-repeat;
+            background-position: left;
+            
+        }
+        .button-subscribe {
+            font-size: 30px;
+            padding: 10px;
+            background-color: #4dc3ff;
+            background-image: url(img/email-arrow-right.svg);
+            background-size: 50px 50px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+            color: transparent;
+        }
+        
+        .label-checkbox {
+            border: 3px solid rgb(5, 3, 105);
+            padding: 5px;
+            color: white;
+            font-size: 20px;
+            margin-left: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+
+      <form action="/url" id="subscribe-form">
+        <h2 class="form-heading">Join our newsletter list</h2>
+        <label>
+            <input
+            type="text"
+            placeholder="e.g: john.doe@example.com"
+            required
+            autofocus
+            class="input-email"
+            >
+        </label>
+        <button class="button-subscribe">SENT</button>
+        <br> <br>
+
+        <label class="label-checkbox">
+        <input type="checkbox"
+        required> 
+         Agree to terms and conditions
+        </label>
+      </form>
+   
+</body>
+</html>
