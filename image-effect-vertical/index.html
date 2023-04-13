@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Effect | Vertical</title>
+    <style>
+
+       body {
+        background-color: #123;
+         }
+       #imageEffects {
+        width: 400px;
+        height: 600px;
+        border: 3px solid black;
+        margin: 250px auto;
+        background-image: url(img/639-400x600.jpg);
+       }
+       #imageEffects .slide {
+        width: 400px;
+        height: 300px;
+        border-bottom: 3px solid black;
+        background-image: url(img/639-400x600gray.jpg);
+      }
+      #imageEffects .slide a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        transform: translateX(190px) translateY(268px);
+        font-size: 30px;
+      }
+       #up:target .slide {
+        height: 100px;
+        transition: .5s;
+      }
+       #down:target .slide {
+        height: 500px;
+        transition: .5s;
+      }
+       #up:target .slide a {
+        transform: translateX(190px) translateY(69px);
+        transition: .5s;
+      }
+       #down:target .slide a {
+        transform: translateX(190px) translateY(469px);
+        transition: .5s;
+      }
+      
+    </style>
+</head>
+<body>
+
+    <div id="up">
+    
+        <div id="down">
+    
+            <div id="imageEffects">
+                <div class="slide">
+                    <a href="#up">▲</a>
+                    <a href="#down">▼</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
