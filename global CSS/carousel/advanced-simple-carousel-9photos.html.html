@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Two stage carousel | Advanced CSS Selectors</title>
+    <style>
+
+        body {
+            background-color: #134;
+        }
+        .carousel {
+            width: 850px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+            box-shadow: 0 5px 5px #111;
+        }
+        .carousel .slide {
+            width: 2720px;
+            transition: 1s;
+        }
+        .carousel .controls {
+            text-align: center;
+            font-size: 30px;
+            text-decoration: none;
+        }
+        .carousel .controls a {
+            color: rgb(4, 161, 161);
+            transition: 0.5s;
+        }
+        .carousel .controls a:hover {
+            color: papayawhip;
+        }
+        .carousel #one:target .slide {
+            transform: translateX(0);
+        }
+        .carousel #two:target .slide {
+            transform: translateX(-850px);
+        }
+        .carousel #three:target .slide {
+            transform: translateX(-1700px);
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <div id="one">
+            <div id="two">
+                <div id="three">
+                <div class="slide">
+                    <img src="https://fastly.picsum.photos/id/984/280/400.jpg?hmac=JhwEHhTA3ulrVFhj1ZbiENLZPgJXGmNCqAYf7uZgy68" alt="">
+                    <img src="https://fastly.picsum.photos/id/1003/280/400.jpg?hmac=0sinzwOSRS9z2cQHMe7xc-V_h9wlHKxxvLdCvgw6iG4" alt="">
+                    <img src="https://fastly.picsum.photos/id/301/280/400.jpg?hmac=PEEnVBR30Cb3v_I5cDpQyunZJcUmi5czNlrz8me8E2s" alt="">
+                    <img src="https://fastly.picsum.photos/id/981/280/400.jpg?hmac=y8sPFGhDeaWc-9TW6mnMA7hYDrNxuUhemn67lsCS5os" alt="">
+                    <img src="https://fastly.picsum.photos/id/890/280/400.jpg?hmac=CWTEaXqK3ji0Cov9G_RMJAuAgsld0GVQqcE13DiQ2nU" alt="">
+                    <img src="https://fastly.picsum.photos/id/106/280/400.jpg?hmac=dtBsbu-N4h5qzSxMwQDDAiAwX95IPMv1ntBZBLhjK0s" alt="">
+                    <img src="https://fastly.picsum.photos/id/666/280/400.jpg?hmac=_pc-zDS0TxF_xAtoN_yx5NvhX1vNPt0pcWYxTXCMNqY" alt="">
+                    <img src="https://fastly.picsum.photos/id/582/280/400.jpg?hmac=SvEl5x_ty4_ZvGWH2OQYRTplZw9SDKA7u1kE-HTAt78" alt="">
+                    <img src="https://fastly.picsum.photos/id/268/280/400.jpg?hmac=hF0WUaF6bK1BHv11Bn3bF3E7ONF5Bj7YzpS-JjzC99U" alt="">
+                
+                 </div>
+               </div>
+            </div>
+        </div>
+        <div class="controls">
+            <a href="#one">[1]</a>
+            <a href="#two">[2]</a>
+            <a href="#three">[3]</a>
+        </div>
+    </div>
+
+</body>
+</html>
