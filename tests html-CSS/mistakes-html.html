@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gasiti erorile in cod, <br>corectati-le, <br>vedeti daca codul poate fi imbunatatit. :)</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+        h2 {
+            color: green;
+        }
+        p {
+            color: blue
+        }
+        img {
+            width: 200px;
+        }
+        #images ul {
+            background-color: black;
+        }
+        .menu {
+            background-color: green 
+        }
+    </style>
+</head>
+<body style="background-color: red;">
+    <header itemscope itemtype="http://schema.org/Article">
+        <h1>Gasiti erorile in cod, <br>corectati-le, <br>vedeti daca codul poate fi imbunatatit. :)</h1>
+        <h2 itemprop="name">Verifica-ti cunostintele HTML si CSS</h2>
+    </header>
+
+    <article>
+        <p>
+            Acesta este <strong>un text accentuat</strong>. <br>
+            Tag-ul <img src="url"> este utilizat pentru adaugarea unei imagini. De exemplu: <br>
+            <img src="/images/logo,jpg" itemprop="image" align="left">. <br>
+        </p>
+        <!-- 29. Inaltimea imaginei se calculeaza automat, insa inaltimea e de 200px. -->
+        <p itemprop="description">
+            Tag-ul <h1> reprezinta un antet, ca si <h2>, <h3>, <h4>, <h5>, <h6>. <br>
+            Tag-ul  <b>si <strong> sunt echivalente.
+        </p>
+    </article>
+    <!-- 39. Fundalul listei s-a colorat in culoarea verde. -->
+    <section>
+        <ul id="images ul" class="menu">
+            <li><a href="/1"><img src="1.jpg" alt="Image 1">Link 1</a></li>
+            <li><a href="/2"><img src="2.jpg" alt="Image 2">Link 2</a></li>
+            <li class="active"><a href="/3"><img src="3.jpg" alt="Image 3">Link 3</a></li>
+            <li><a href="/4"><img src="4.jpg" alt="Image 4">Link 4</a></li>
+            <li><a href="/5"><img src="5.jpg" alt="Image 5">Link 5</a></li>
+        </ul>
+    </section>
+    
+</body>
+</html>
